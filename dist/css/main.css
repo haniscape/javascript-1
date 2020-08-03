@@ -1,0 +1,76 @@
+/* VARIABLES */
+/* MIXINS */
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+/* GENERAL */
+html,
+body {
+  font-family: 'Recursive', sans-serif;
+  font-weight: 400;
+}
+
+/* SECTIONS */
+section {
+  margin: 50px auto;
+  width: 1200px;
+}
+
+section .row {
+  background-color: #272e2e;
+  color: #fff;
+  padding: 50px;
+}
+
+section .row .section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0 30px;
+}
+
+section .row .section-heading h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 5px;
+}
+
+section .row .section-heading p {
+  font-size: 1.6rem;
+  margin: 10px auto 0;
+}
+
+section p {
+  position: relative;
+  font-size: 1.2rem;
+}
+
+pre {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #2e3d3d;
+  font-size: 1em;
+  color: #fff;
+  -webkit-box-shadow: #ffee00 1px 1px;
+          box-shadow: #ffee00 1px 1px;
+  overflow-x: auto;
+  width: 95%;
+  padding: 5px 10px;
+}
+
+ul {
+  line-height: 2;
+}
+
+.danger {
+  color: #ff0000;
+}

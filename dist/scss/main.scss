@@ -1,0 +1,77 @@
+/* VARIABLES */
+
+$grey-dark: #272e2e;
+$grey-medium: #2e3d3d;
+$lime: #ffee00;
+$white: #fff;
+$red: #ff0000;
+$orange: #ff5f38;
+
+/* MIXINS */
+@mixin code-style {
+  font-family: 'Source Code Pro', monospace;
+  background-color: $grey-medium;
+  font-size: 1em;
+  color: $white;
+  box-shadow: $lime 1px 1px;
+  overflow-x: auto;
+  width: 95%;
+  padding: 5px 10px;
+}
+
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+/* GENERAL */
+
+html,
+body {
+  font-family: 'Recursive', sans-serif;
+  font-weight: 400;
+}
+
+/* SECTIONS */
+
+section {
+  margin: 50px auto;
+  width: 1200px;
+  .row {
+    background-color: $grey-dark;
+    color: $white;
+    padding: 50px;
+    .section-heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 10px 0 30px;
+      h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 5px;
+      }
+      p {
+        font-size: 1.6rem;
+        margin: 10px auto 0;
+      }
+    }
+  }
+  p {
+    position: relative;
+    font-size: 1.2rem;
+  }
+}
+
+pre {
+  @include code-style;
+}
+
+ul {
+  line-height: 2;
+}
+
+.danger {
+  color: $red;
+}
